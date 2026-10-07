@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apex_fde_matrix"
+version = "1.0.0"
+description = "Autonomous Infrastructure Knowledge Graph & Multi-Agent SRE Control Plane for Forward Deployed Engineers"
+readme = "README.md"
+authors = [
+    { name = "Ahmed Hassan", email = "aah@a2zsoc.com" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+keywords = [
+    "forward-deployed-engineer",
+    "agentic-infrastructure",
+    "autonomous-sre",
+    "platform-engineering",
+    "infrastructure-knowledge-graph",
+    "digital-twin",
+    "graph-rag",
+    "model-context-protocol",
+    "mcp-server",
+    "multi-agent-system",
+    "kubernetes",
+    "ebpf",
+    "zero-dependency",
+    "paperclip",
+    "hermes-agent",
+    "nvidia-nim",
+    "deepagents"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: System :: Systems Administration",
+    "Topic :: System :: Distributed Computing",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+
+[project.scripts]
+apex-fde-matrix = "apex_fde_matrix.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["apex_fde_matrix*"]

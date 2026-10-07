@@ -14,6 +14,9 @@ demo:
 sovereign-demo:
 	$(PYTHON) examples/paperclip_hermes_nim_demo.py
 
+fde-demo:
+	$(PYTHON) examples/fde_defense_and_governance_demo.py
+
 mcp:
 	$(PYTHON) -m apex_fde_matrix mcp
 
